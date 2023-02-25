@@ -1,0 +1,10 @@
+D:\Quark Academy\Unity\Práctico\repo\CotizadorExpress\CotizadorExpress\bin\Debug\CotizadorExpress.exe.config
+D:\Quark Academy\Unity\Práctico\repo\CotizadorExpress\CotizadorExpress\bin\Debug\CotizadorExpress.exe
+D:\Quark Academy\Unity\Práctico\repo\CotizadorExpress\CotizadorExpress\bin\Debug\CotizadorExpress.pdb
+D:\Quark Academy\Unity\Práctico\repo\CotizadorExpress\CotizadorExpress\obj\Debug\CotizadorExpress.csproj.AssemblyReference.cache
+D:\Quark Academy\Unity\Práctico\repo\CotizadorExpress\CotizadorExpress\obj\Debug\CotizadorExpress.Properties.Resources.resources
+D:\Quark Academy\Unity\Práctico\repo\CotizadorExpress\CotizadorExpress\obj\Debug\CotizadorExpress.csproj.GenerateResource.cache
+D:\Quark Academy\Unity\Práctico\repo\CotizadorExpress\CotizadorExpress\obj\Debug\CotizadorExpress.csproj.CoreCompileInputs.cache
+D:\Quark Academy\Unity\Práctico\repo\CotizadorExpress\CotizadorExpress\obj\Debug\CotizadorExpress.exe
+D:\Quark Academy\Unity\Práctico\repo\CotizadorExpress\CotizadorExpress\obj\Debug\CotizadorExpress.pdb
+D:\Quark Academy\Unity\Práctico\repo\CotizadorExpress\CotizadorExpress\obj\Debug\CotizadorExpress.menuPrincipal.resources
