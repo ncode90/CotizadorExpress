@@ -90,5 +90,10 @@ namespace CotizadorExpress
             }
             lblStock.Text = stockReal.ToString();
         }
+
+        private void historial_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            claseControladora.mostrarHistorial();
+        }
     }
 }

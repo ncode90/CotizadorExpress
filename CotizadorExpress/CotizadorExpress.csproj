@@ -47,6 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controlador\ClaseControladora.cs" />
+    <Compile Include="Vista\Historial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Historial.Designer.cs">
+      <DependentUpon>Historial.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista\MenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +76,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Vista\Historial.resx">
+      <DependentUpon>Historial.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vista\MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>

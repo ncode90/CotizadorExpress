@@ -46,19 +46,19 @@ namespace CotizadorExpress
             this.lblUnidades = new System.Windows.Forms.Label();
             this.lblStock = new System.Windows.Forms.Label();
             this.boxPrecioCantidad = new System.Windows.Forms.GroupBox();
+            this.precioUnitario = new System.Windows.Forms.NumericUpDown();
             this.cantidad = new System.Windows.Forms.NumericUpDown();
             this.lblCantidad = new System.Windows.Forms.Label();
             this.dollarSign = new System.Windows.Forms.Label();
             this.btnCotizar = new System.Windows.Forms.Button();
             this.dollarSignCotizacion = new System.Windows.Forms.Label();
             this.lblCotizacion = new System.Windows.Forms.Label();
-            this.precioUnitario = new System.Windows.Forms.NumericUpDown();
             historial = new System.Windows.Forms.LinkLabel();
             this.prendaBox.SuspendLayout();
             this.calidadBox.SuspendLayout();
             this.boxPrecioCantidad.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cantidad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.precioUnitario)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cantidad)).BeginInit();
             this.SuspendLayout();
             // 
             // historial
@@ -71,6 +71,7 @@ namespace CotizadorExpress
             historial.TabStop = true;
             historial.Text = "Historial Cotizaciones";
             historial.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            historial.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.historial_LinkClicked);
             // 
             // nombreTienda
             // 
@@ -248,6 +249,24 @@ namespace CotizadorExpress
             this.boxPrecioCantidad.TabStop = false;
             this.boxPrecioCantidad.Text = "Precio y Cantidad";
             // 
+            // precioUnitario
+            // 
+            this.precioUnitario.DecimalPlaces = 2;
+            this.precioUnitario.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
+            this.precioUnitario.Location = new System.Drawing.Point(36, 30);
+            this.precioUnitario.Maximum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
+            this.precioUnitario.Name = "precioUnitario";
+            this.precioUnitario.Size = new System.Drawing.Size(73, 20);
+            this.precioUnitario.TabIndex = 13;
+            // 
             // cantidad
             // 
             this.cantidad.Location = new System.Drawing.Point(173, 30);
@@ -309,24 +328,6 @@ namespace CotizadorExpress
             this.lblCotizacion.TabIndex = 14;
             this.lblCotizacion.Text = "______";
             // 
-            // precioUnitario
-            // 
-            this.precioUnitario.DecimalPlaces = 2;
-            this.precioUnitario.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            65536});
-            this.precioUnitario.Location = new System.Drawing.Point(36, 30);
-            this.precioUnitario.Maximum = new decimal(new int[] {
-            100000,
-            0,
-            0,
-            0});
-            this.precioUnitario.Name = "precioUnitario";
-            this.precioUnitario.Size = new System.Drawing.Size(73, 20);
-            this.precioUnitario.TabIndex = 13;
-            // 
             // menuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -354,8 +355,8 @@ namespace CotizadorExpress
             this.calidadBox.PerformLayout();
             this.boxPrecioCantidad.ResumeLayout(false);
             this.boxPrecioCantidad.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cantidad)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.precioUnitario)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cantidad)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

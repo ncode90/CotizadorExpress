@@ -18,7 +18,7 @@ namespace CotizadorExpress.Modelo
 
         public Cotizacion(DateTime fecha, string codigoVendedor, string prenda, int cantidad, decimal resultado)
         {
-            this.id = idCount++;
+            this.id = ++idCount;
             this.fecha = fecha;
             this.codigoVendedor = codigoVendedor;
             this.prenda = prenda;

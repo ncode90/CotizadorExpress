@@ -12,6 +12,8 @@ namespace CotizadorExpress.Controlador
     {
         Modelo.Tienda tienda = new Modelo.Tienda();
         Modelo.Vendedor vendedor = new Modelo.Vendedor();
+        Vista.Historial historial = new Vista.Historial();
+        
         public ClaseControladora()
         {
 
@@ -41,6 +43,13 @@ namespace CotizadorExpress.Controlador
         public decimal iniciarCotizacion(decimal pUnitario, decimal cant, bool camisa, bool mangaCorta, bool cuelloMao, bool chupin, bool premium)
         {
             return vendedor.cotizar(pUnitario, cant, camisa, mangaCorta, cuelloMao, chupin, premium);
+        }
+
+        // Abre el form del Historial
+        public void mostrarHistorial()
+        {
+            historial.Show();
+            historial.cargarDatos(vendedor.historial);
         }
     }
 }
