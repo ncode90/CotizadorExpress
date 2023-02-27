@@ -10,7 +10,5 @@ namespace CotizadorExpress.Modelo
     {
         public String nombre { get; set; }
         public String direccion { get; set; }
-        public List<Prenda> listado { get; set; }
-
     }
 }

@@ -7,7 +7,6 @@ using System.Windows.Forms;
 
 namespace CotizadorExpress.Controlador
 {
-
     class ClaseControladora
     {
         Modelo.Tienda tienda = new Modelo.Tienda();
